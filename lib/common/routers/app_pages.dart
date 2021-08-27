@@ -1,6 +1,8 @@
 import 'package:fultter_project/pages/home/index.dart';
+import 'package:fultter_project/pages/login/bingings.dart';
 import 'package:fultter_project/pages/login/index.dart';
 import 'package:fultter_project/pages/register/index.dart';
+
 import 'package:get/get.dart';
 
 part 'app_routers.dart';
@@ -10,6 +12,7 @@ class AppPages {
   static List<GetPage> routes = [
     // 登录页面
     GetPage(
+      binding: LoginBinding(),
       name: AppRoutes.Login,
       page: () => LoginView(),
     ),
